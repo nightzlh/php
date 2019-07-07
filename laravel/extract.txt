@@ -1,0 +1,19 @@
+----- this is basic ----
+create project(laravel installation)
+    laravel new blog(project name)
+Directory Permissions
+   storage  bootstrap/cache
+Application Key
+    A application is bind to a application.
+    If you installed Laravel via Composer or the Laravel installer, this key has already been set for you by the  php artisan key:generate command.
+    Typically, this string should be 32 characters long. The key can be set in the .env environment file. If you have not renamed the .env.example file to .env.
+    If the application key is not set, your user sessions and other encrypted data will not be secure!
+Config
+    Laravel needs almost no other configuration out of the box. 
+Nginx
+    location / {
+	try_files $uri $uri/ /index.php?$query_string;
+    }
+
+---- routing ----
+
