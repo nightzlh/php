@@ -144,3 +144,20 @@ Route::get('/', function () {
 if your view is stored at resources/views/admin/profile.blade.php, you may reference it like so:
 
 return view('admin.profile', $data);
+
+---- middleware ----
+Middleware
+	provide a convenient mechanism for filtering HTTP requests entering your application. For example, Laravel includes a middleware that verifies the user of your application is authenticated.
+	All of these middleware are located in the  app/Http/Middleware directory.
+
+Defining Middleware
+	php artisan make:middleware CheckAge	
+
+
+---- validation ----
+
+Introduction
+	Laravel provides several different approaches to validate.By default, Laravel's base controller class uses a ValidatesRequests trait
+
+
+		
