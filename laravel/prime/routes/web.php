@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('user/{id}', 'UserController@show');
+
+Route::get('dbUser/{id}', 'UserController@showProfile');
+

@@ -161,18 +161,3 @@ Defining Middleware
 Introduction
 	Laravel provides several different approaches to validate.By default, Laravel's base controller class uses a ValidatesRequests trait
 
-
----- database ----
-Configuration
-	config/database.php:  In this file you may define all of your database connections
-	database.php read env data from dir_laravel/.env file
-environment variable
-	Each of these configuration(about db) values has its own corresponding environment variable.
-
-dabatase url example
-	mysql://root:password@127.0.0.1/forge?charset=UTF-8
-database url schema	
-	driver://username:password@host:port/database?options
-
----- test ----
-You may also create a .env.testing file. This file will override the .env file when running PHPUnit tests or executing Artisan commands with the  --env=testing option.
